@@ -1,0 +1,897 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.11)  14 FEB 2021 19:47
+entering extended mode
+**./main.tex
+(main.tex
+LaTeX2e <2020-10-01> patch level 2
+L3 programming layer <2020-10-27> xparse <2020-03-03>
+("/Users/enricogherardi/Library/Application Support/MiKTeX/texmfs/install/tex/l
+atex/base/report.cls"
+Document Class: report 2020/04/10 v1.4m Standard LaTeX document class
+
+("/Users/enricogherardi/Library/Application Support/MiKTeX/texmfs/install/tex/l
+atex/base/size12.clo"
+File: size12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count175
+\c@chapter=\count176
+\c@section=\count177
+\c@subsection=\count178
+\c@subsubsection=\count179
+\c@paragraph=\count180
+\c@subparagraph=\count181
+\c@figure=\count182
+\c@table=\count183
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+("/Users/enricogherardi/Library/Application Support/MiKTeX/texmfs/install/tex/l
+atex/amsfonts/amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("/Users/enricogherardi/Library/Application Support/MiKTeX/texmfs/install/tex/l
+atex/amsfonts/amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks15
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+("/Users/enricogherardi/Library/Application Support/MiKTeX/texmfs/install/tex/l
+atex/graphics/graphicx.sty"
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+("/Users/enricogherardi/Library/Application Support/MiKTeX/texmfs/install/tex/l
+atex/graphics/keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+("/Users/enricogherardi/Library/Application Support/MiKTeX/texmfs/install/tex/l
+atex/graphics/graphics.sty"
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
+("/Users/enricogherardi/Library/Application Support/MiKTeX/texmfs/install/tex/l
+atex/graphics/trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("/Users/enricogherardi/Library/Application Support/MiKTeX/texmfs/install/tex/l
+atex/graphics-cfg/graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+("/Users/enricogherardi/Library/Application Support/MiKTeX/texmfs/install/tex/l
+atex/graphics-def/pdftex.def"
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen139
+\Gin@req@width=\dimen140
+)
+("/Users/enricogherardi/Library/Application Support/MiKTeX/texmfs/install/tex/l
+atex/listings/listings.sty"
+\lst@mode=\count184
+\lst@gtempboxa=\box47
+\lst@token=\toks17
+\lst@length=\count185
+\lst@currlwidth=\dimen141
+\lst@column=\count186
+\lst@pos=\count187
+\lst@lostspace=\dimen142
+\lst@width=\dimen143
+\lst@newlines=\count188
+\lst@lineno=\count189
+\lst@maxwidth=\dimen144
+
+("/Users/enricogherardi/Library/Application Support/MiKTeX/texmfs/install/tex/l
+atex/listings/lstmisc.sty"
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count190
+\lst@skipnumbers=\count191
+\lst@framebox=\box48
+)
+("/Users/enricogherardi/Library/Application Support/MiKTeX/texmfs/install/tex/l
+atex/listings/listings.cfg"
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+("/Users/enricogherardi/Library/Application Support/MiKTeX/texmfs/install/tex/l
+atex/natbib/natbib.sty"
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip49
+\bibsep=\skip50
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count192
+)
+("/Users/enricogherardi/Library/Application Support/MiKTeX/texmfs/install/tex/l
+atex/tools/multicol.sty"
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count193
+\mult@box=\box49
+\multicol@leftmargin=\dimen145
+\c@unbalance=\count194
+\c@collectmore=\count195
+\doublecol@number=\count196
+\multicoltolerance=\count197
+\multicolpretolerance=\count198
+\full@width=\dimen146
+\page@free=\dimen147
+\premulticols=\dimen148
+\postmulticols=\dimen149
+\multicolsep=\skip51
+\multicolbaselineskip=\skip52
+\partial@page=\box50
+\last@line=\box51
+\maxbalancingoverflow=\dimen150
+\mult@rightbox=\box52
+\mult@grightbox=\box53
+\mult@gfirstbox=\box54
+\mult@firstbox=\box55
+\@tempa=\box56
+\@tempa=\box57
+\@tempa=\box58
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\c@minrows=\count199
+\c@columnbadness=\count266
+\c@finalcolumnbadness=\count267
+\last@try=\dimen151
+\multicolovershoot=\dimen152
+\multicolundershoot=\dimen153
+\mult@nat@firstbox=\box93
+\colbreak@box=\box94
+\mc@col@check@num=\count268
+)
+("/Users/enricogherardi/Library/Application Support/MiKTeX/texmfs/install/tex/l
+atex/xcolor/xcolor.sty"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("/Users/enricogherardi/Library/Application Support/MiKTeX/texmfs/install/tex/l
+atex/graphics-cfg/color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+("/Users/enricogherardi/Library/Application Support/MiKTeX/texmfs/install/tex/l
+atex/algorithm2e/algorithm2e.sty"
+Package: algorithm2e 2017/07/18 v5.2 algorithms environments
+\c@AlgoLine=\count269
+
+("/Users/enricogherardi/Library/Application Support/MiKTeX/texmfs/install/tex/l
+atex/base/ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\algocf@hangindent=\skip53
+
+("/Users/enricogherardi/Library/Application Support/MiKTeX/texmfs/install/tex/l
+atex/ifoddpage/ifoddpage.sty"
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count270
+)
+("/Users/enricogherardi/Library/Application Support/MiKTeX/texmfs/install/tex/l
+atex/tools/xspace.sty"
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+("/Users/enricogherardi/Library/Application Support/MiKTeX/texmfs/install/tex/l
+atex/relsize/relsize.sty"
+Package: relsize 2013/03/29 ver 4.1
+)
+\skiptotal=\skip54
+\skiplinenumber=\skip55
+\skiprule=\skip56
+\skiphlne=\skip57
+\skiptext=\skip58
+\skiplength=\skip59
+\algomargin=\skip60
+\skipalgocfslide=\skip61
+\algowidth=\dimen154
+\inoutsize=\dimen155
+\inoutindent=\dimen156
+\interspacetitleruled=\dimen157
+\interspacealgoruled=\dimen158
+\interspacetitleboxruled=\dimen159
+\algocf@ruledwidth=\skip62
+\algocf@inoutbox=\box95
+\algocf@inputbox=\box96
+\AlCapSkip=\skip63
+\AlCapHSkip=\skip64
+\algoskipindent=\skip65
+\algocf@nlbox=\box97
+\algocf@hangingbox=\box98
+\algocf@untilbox=\box99
+\algocf@skipuntil=\skip66
+\algocf@capbox=\box100
+\algocf@lcaptionbox=\skip67
+\algoheightruledefault=\skip68
+\algoheightrule=\skip69
+\algotitleheightruledefault=\skip70
+\algotitleheightrule=\skip71
+\c@algocfline=\count271
+\c@algocfproc=\count272
+\c@algocf=\count273
+\algocf@algoframe=\box101
+\algocf@algobox=\box102
+)
+("/Users/enricogherardi/Library/Application Support/MiKTeX/texmfs/install/tex/l
+atex/multirow/multirow.sty"
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip72
+\multirow@cntb=\count274
+\multirow@dima=\skip73
+\bigstrutjot=\dimen160
+)
+("/Users/enricogherardi/Library/Application Support/MiKTeX/texmfs/install/tex/l
+atex/tools/array.sty"
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen161
+\ar@mcellbox=\box103
+\extrarowheight=\dimen162
+\NC@list=\toks18
+\extratabsurround=\skip74
+\backup@length=\skip75
+\ar@cellbox=\box104
+)
+("/Users/enricogherardi/Library/Application Support/MiKTeX/texmfs/install/tex/l
+atex/float/float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count275
+\float@exts=\toks19
+\float@box=\box105
+\@float@everytoks=\toks20
+\@floatcapt=\box106
+)
+("/Users/enricogherardi/Library/Application Support/MiKTeX/texmfs/install/tex/l
+atex/l3backend/l3backend-pdftex.def"
+File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count276
+\l__pdf_internal_box=\box107
+) (main.aux (FrontMatter/titlePage.aux)
+(Chapters/Chapter1/chapter1.aux) (Chapters/Chapter2/chapter2.aux)
+(Chapters/Chapter3/chapter3.aux) (Chapters/Chapter4/chapter4.aux))
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+
+("/Users/enricogherardi/Library/Application Support/MiKTeX/texmfs/install/tex/c
+ontext/base/mkii/supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count277
+\scratchdimen=\dimen163
+\scratchbox=\box108
+\nofMPsegments=\count278
+\nofMParguments=\count279
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count280
+\MPscratchDim=\dimen164
+\MPnumerator=\count281
+\makeMPintoPDFobject=\count282
+\everyMPtoPDFconversion=\toks22
+)
+("/Users/enricogherardi/Library/Application Support/MiKTeX/texmfs/install/tex/l
+atex/epstopdf-pkg/epstopdf-base.sty"
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+)
+\c@lstlisting=\count283
+\openout2 = `./FrontMatter/titlePage.aux'.
+
+ (FrontMatter/titlePage.tex
+<./Images/Polimilogo.png, id=1, 405.515pt x 125.46875pt>
+File: ./Images/Polimilogo.png Graphic file (type png)
+<use ./Images/Polimilogo.png>
+Package pdftex.def Info: ./Images/Polimilogo.png  used on input line 6.
+(pdftex.def)             Requested size: 284.52756pt x 88.0362pt.
+<./Images/MockupLogo/LogoEnorme.png, id=2, 697.10437pt x 384.6872pt>
+File: ./Images/MockupLogo/LogoEnorme.png Graphic file (type png)
+<use ./Images/MockupLogo/LogoEnorme.png>
+Package pdftex.def Info: ./Images/MockupLogo/LogoEnorme.png  used on input line
+ 19.
+(pdftex.def)             Requested size: 284.52756pt x 157.01251pt.
+) [1
+
+
+{/Users/enricogherardi/Library/Application Support/MiKTeX/texmfs/data/pdftex/co
+nfig/pdftex.map} <./Images/Polimilogo.png> <./Images/MockupLogo/LogoEnorme.png>
+] (main.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+
+("/Users/enricogherardi/Library/Application Support/MiKTeX/texmfs/install/tex/l
+atex/amsfonts/umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+
+("/Users/enricogherardi/Library/Application Support/MiKTeX/texmfs/install/tex/l
+atex/amsfonts/umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
+\tf@toc=\write3
+\openout3 = `main.toc'.
+
+ [2
+
+
+
+]
+\openout2 = `./Chapters/Chapter1/chapter1.aux'.
+
+ (Chapters/Chapter1/chapter1.tex
+Chapter 1.
+(Chapters/Chapter1/1.1Scope.tex) (Chapters/Chapter1/1.2Project.tex)
+(Chapters/Chapter1/1.3DefinitionsAcronymsAbbreviations.tex
+Overfull \hbox (2.57503pt too wide) in paragraph at lines 3--1
+\OT1/cmr/m/n/12 repository: https://github.com/teobia98/BianchiCampiDeSantis. I
+n the team's folder
+ []
+
+(Chapters/Chapter1/1.3.1Definitions.tex [1
+
+
+
+])
+(Chapters/Chapter1/1.3.2Acronyms.tex) (Chapters/Chapter1/1.3.3Abbreviations.tex
+)) (Chapters/Chapter1/1.4Revision.tex) (Chapters/Chapter1/1.5Reference.tex
+[2]) (Chapters/Chapter1/1.6Document.tex)) [3]
+\openout2 = `./Chapters/Chapter2/chapter2.aux'.
+
+ (Chapters/Chapter2/chapter2.tex
+Chapter 2.
+
+Overfull \hbox (4.25879pt too wide) in paragraph at lines 3--5
+\OT1/cmr/m/n/12 The installation guide is extremely precise and detailed: it pr
+ovides also the screenshots
+ []
+
+) [4
+
+
+
+
+]
+\openout2 = `./Chapters/Chapter3/chapter3.aux'.
+
+ (Chapters/Chapter3/chapter3.tex
+Chapter 3.
+(Chapters/Chapter3/3.1DevelopedReq.tex
+Underfull \hbox (badness 10000) in paragraph at lines 6--9
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--9
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--9
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--15
+
+ []
+
+
+Overfull \hbox (43.45793pt too wide) in paragraph at lines 12--15
+\OT1/cmr/m/n/12 Mons. G. Cavazzuti 24", openingTime="08:30", closingTime="18:45
+", capacity="100",
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--15
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--15
+
+ []
+
+
+Overfull \hbox (0.97884pt too wide) in paragraph at lines 12--15
+\OT1/cmr/bx/n/12 Test Case\OT1/cmr/m/n/12 : register store with reservation lim
+it greater than maximum capacity. 
+ []
+
+
+Overfull \hbox (43.45793pt too wide) in paragraph at lines 12--15
+\OT1/cmr/m/n/12 Mons. G. Cavazzuti 24", openingTime="08:30", closingTime="18:45
+", capacity="100",
+ []
+
+[5
+
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--29
+
+ []
+
+
+Overfull \hbox (17.54929pt too wide) in paragraph at lines 25--29
+\OT1/cmr/bx/n/12 Input\OT1/cmr/m/n/12 : username="op3car", password="password",
+ repeatPassword="password",
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--29
+
+ []
+
+
+Overfull \hbox (0.25085pt too wide) in paragraph at lines 25--29
+\OT1/cmr/bx/n/12 Input\OT1/cmr/m/n/12 : username=(null), password="password", r
+epeatPassword="password",
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--29
+
+ []
+
+
+Overfull \hbox (22.44507pt too wide) in paragraph at lines 25--29
+\OT1/cmr/bx/n/12 Input\OT1/cmr/m/n/12 : username=operato16, password="password"
+, repeatPassword="password",
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--29
+
+ []
+
+
+Overfull \hbox (51.48921pt too wide) in paragraph at lines 25--29
+\OT1/cmr/bx/n/12 Input\OT1/cmr/m/n/12 : username="op3car", password="password",
+ repeatPassword="passwordWrong",
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--29
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 33--36
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--36
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--36
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--41
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--41
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--47
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--47
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--57
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--57
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--57
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--69
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--69
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--69
+
+ []
+
+[8]
+Overfull \hbox (3.1535pt too wide) in paragraph at lines 71--73
+[]\OT1/cmr/bx/n/12 R16\OT1/cmr/m/n/12 : The system shall provide to lined-up cu
+stomers their real time approximate
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--77
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--77
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--77
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--81
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--81
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--81
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--85
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--85
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--85
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 87--89
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--89
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--89
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--95
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--95
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--95
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--95
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--100
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--100
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--100
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 103--109
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--109
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--109
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--109
+
+ []
+
+
+Overfull \hbox (1.68695pt too wide) in paragraph at lines 103--109
+\OT1/cmr/bx/n/12 Input\OT1/cmr/m/n/12 : username=ludorighi, email="example@gmai
+l.com", name="Ludovico",
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--109
+
+ []
+
+
+Overfull \hbox (87.03052pt too wide) in paragraph at lines 103--109
+\OT1/cmr/bx/n/12 Input\OT1/cmr/m/n/12 : username=(null), email="example@gmail.c
+om", name="Ludovico", lastName="Righi",
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--109
+
+ []
+
+
+Overfull \hbox (1.68695pt too wide) in paragraph at lines 103--109
+\OT1/cmr/bx/n/12 Input\OT1/cmr/m/n/12 : username=ludorighi, email="example@gmai
+l.com", name="Ludovico",
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--109
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 111--116
+
+ []
+
+
+Overfull \hbox (23.81589pt too wide) in paragraph at lines 111--116
+\OT1/cmr/bx/n/12 Input\OT1/cmr/m/n/12 : store="ExampleStore market" , date=(tod
+ay), time="08:00", duration="30
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--120
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--120
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--120
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--124
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--124
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--124
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 126--128
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--128
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--128
+
+ []
+
+) (Chapters/Chapter3/3.2AdditionalFeat.tex)) [13]
+\openout2 = `./Chapters/Chapter4/chapter4.aux'.
+
+
+(Chapters/Chapter4/chapter4.tex
+Chapter 4.
+
+Overfull \hbox (1.58243pt too wide) in paragraph at lines 3--6
+\OT1/cmr/m/n/12 which, even if it is not fully detaild, it represents a further
+ tool for better understanding
+ []
+
+) [14
+
+
+
+
+]
+No file main.bbl.
+(main.aux (FrontMatter/titlePage.aux) (Chapters/Chapter1/chapter1.aux)
+(Chapters/Chapter2/chapter2.aux) (Chapters/Chapter3/chapter3.aux)
+(Chapters/Chapter4/chapter4.aux)) ) 
+Here is how much of TeX's memory you used:
+ 5303 strings out of 481732
+ 80791 string characters out of 2918345
+ 358025 words of memory out of 3000000
+ 21931 multiletter control sequences out of 15000+200000
+ 542494 words of font info for 56 fonts, out of 3000000 for 9000
+ 0 hyphenation exceptions out of 8191
+ 66i,6n,72p,562b,296s stack positions out of 5000i,500n,10000p,200000b,50000s
+ </Users/enricogherardi/Library/Application 
+Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk></Use
+rs/enricogherardi/Library/Application Support/MiKTeX/texmfs/install/fonts/type1
+/public/amsfonts/cm/cmbx12.pfb></Users/enricogherardi/Library/Application Suppo
+rt/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb></Users/enri
+cogherardi/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public
+/amsfonts/cm/cmr10.pfb></Users/enricogherardi/Library/Application Support/MiKTe
+X/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+Output written on main.pdf (16 pages, 115711 bytes).
+PDF statistics:
+ 80 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+

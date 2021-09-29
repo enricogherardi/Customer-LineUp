@@ -1,0 +1,94 @@
+\subsection{Store Manager}
+
+\textbf{Scenario 5: Monitoring the Affluence}\\
+Gianluca has been a store manager of his supermarket for 20 years. He takes really care of his customer’s health and he decides to adopt Customer Line-Up for his store due to this reason. At every peak times of affluence, he can control the number of people inside his supermarket thanks to his dedicated portal. He also can control all the booked visits to monitor the future affluence of his store.\\
+
+\begin{center}
+    \begin{tabular}{ | l | p{11cm} |}
+    \hline
+    \textbf{Name} & Store Manager Registration \\ \hline
+    \textbf{Actor} & Store Manager \\ \hline
+    \textbf{Entry Condition} & Store Manager enters the Login page  \\ \hline
+    \textbf{Event Flow} & \begin{enumerate}
+					\item The Store Manager clicks on the “Sign In” button in the Login page to start the Registration process.
+					\item The Store Manager fills in all the mandatory fields.
+					\item The Store Manager loads a certification document which proves that is a real Store Manager.
+					\item The Store Manager clicks on the “Register” button.
+					\item The System validates the certification document.
+					\item The System saves the data.
+					\item The System sends and email to the new Store Manager with the confirmation.
+		            \end{enumerate}\\  \hline
+    \textbf{Exit Condition} & The Store Manager successfully ends the registration process and become a new User. From now on he/she can log in to the application providing his/her credentials and start using CLup. \\ \hline
+    \end{tabular}
+\end{center}
+See the Exceptions in the next page. \\
+\begin{center}
+    \begin{tabular}{ | l | p{11cm} |}
+    \hline
+    \textbf{Exceptions} & \begin{enumerate}
+					\item The Store Manager is already registered.
+					\item The Store Manager inserts not valid informations in one or more mandatory fields.
+					\item The Store Manager chooses an username that has already been taken by another user. 
+					\item The Store Manager chooses an email that has been associated with another user.
+					\item The Store Manager has not filled in one or more mandatory field.
+					\item The System does not validate the certification document.
+		            \end{enumerate} All exceptions are handled notifying the issue to the Store Manager and taking back the Event Flow to the point number 2.\\  \hline
+    \end{tabular}
+\end{center}
+\begin{center}
+    \begin{tabular}{ | l | p{11cm} |}
+    \hline
+    \textbf{Name} & Store Manager Login \\ \hline
+    \textbf{Actor} & Store Manager \\ \hline
+    \textbf{Entry Condition} & The already registered Store Manager enters the Login page  \\ \hline
+    \textbf{Event Flow} & \begin{enumerate}
+					\item The Store Manager inserts the username.
+					\item The Store Manager inserts the password.
+					\item The Store Manager clicks on the "Login" button.
+		            \end{enumerate}\\  \hline
+    \textbf{Exit Condition} & The Store Manager successfully logs in and have access to the CLup services.  \\ \hline
+    \textbf{Exceptions} & \begin{enumerate}
+					\item The Store Manager has not filled in both the username and the password.
+					\item The Store Manager inserts an email which is not saved in the database.
+					\item The Store Manager inserts a wrong password.
+		            \end{enumerate} All exceptions are handled notifying the issue to the Store Manager through a warning message.\\  \hline
+				
+    \end{tabular}
+\end{center} 
+
+\begin{center}
+    \begin{tabular}{ | l | p{11cm} |}
+    \hline
+    \textbf{Name} & Ticket Generation\\ \hline
+    \textbf{Actor} & Store Manager \\ \hline
+    \textbf{Entry Condition} &  The No-Tech Customer arrives to the supermarket\\ \hline
+    \textbf{Event Flow} & \begin{enumerate}
+					\item The Store Manager enters his dedicated portal.
+					\item The Store manager reports the customer to the system.
+					\item The System updates the real-time queue of the supermarket.
+					\item The System generates the ticket for the No-Tech Customer.
+		            \end{enumerate}\\  \hline
+    \textbf{Exit Condition} & The No-Tech Customer enters successfully in the store immediately or after his waiting time if the supermaket is full.\\ \hline
+    \textbf{Exceptions} & There are no possible exceptions.\\  \hline
+				
+    \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{ | l | p{11cm} |}
+    \hline
+    \textbf{Name} & Check Supermarket Affluence\\ \hline
+    \textbf{Actor} & Store Manager \\ \hline
+    \textbf{Entry Condition} &  Store Manager has already logged in. \\ \hline
+    \textbf{Event Flow} & \begin{enumerate}
+					\item The Store Manager clicks the "Check Affluence" button.
+					\item The Store Manager selects the supermarket that he want to monitor.
+					\item The System shows the informations to the Store Manager.
+		            \end{enumerate}\\  \hline
+    \textbf{Exit Condition} & The Store Manager can see the informations regarding the affluences of the store. \\ \hline
+    \textbf{Exceptions} & There are no possible exceptions.\\  \hline
+				
+    \end{tabular}
+\end{center}
+
+

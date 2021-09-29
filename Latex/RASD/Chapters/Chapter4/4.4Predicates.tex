@@ -1,0 +1,67 @@
+\section{Predicates}
+This section shows the piece of code in Alloy that contains the Predicates. \\
+
+\begin{lstlisting} %[language=alloy, basicstyle=\small] 
+//............
+pred isCustomerInARequest[c: Customer, t: Time] {
+   one r: Request | r.state.t = Started and r.custumer = c
+}
+
+pred makeALineUpRequest[c: Customer, q: QRCode, t: Time, r': LineUpRequest]{
+   //precondition
+   not isCustomerInARequest[c,t]
+   //postcondition
+   r'.custumer = c
+   r'.qrCode = q
+   r'.state.t = Reserved
+}
+run makeALineUpRequest
+
+pred makeABookingRequest[c: Customer, b: Booking, t: Time, r': Request]{
+   //precondition
+   not isCustomerInARequest[c,t]
+   //postcondition
+   r'.custumer = c
+   r'.booking = b
+   r'.state.t = Reserved
+}
+run makeABookingRequest
+
+pred startARequest[r: Request, t: Time]{
+   //precondition
+   not isCustomerInARequest[r.custumer,t]
+   r.state.t = Reserved
+   //postcondition
+   r.state.(t.next) = Started
+   isCustomerInARequest[r.custumer,t.next]
+}
+run startARequest
+
+pred endARequest[r: Request, t: Time] {
+   //precondition
+   isCustomerInARequest[r.custumer,t]
+   r.state.t = Reserved or r.state.t = Started
+   //postcondition
+   r.state.(t.next) = Finished
+   not isCustomerInARequest[r.custumer,t.next]
+}
+run endARequest
+
+
+//Pred Show
+pred show {
+   #Customer = 3
+   #TicketEntrance = 1
+   #BookingRequest = 1
+   #LineUpRequest = 1
+   #Supermarket = 1
+}
+run show for 3
+\end{lstlisting}
+
+
+
+
+
+ 
+ 

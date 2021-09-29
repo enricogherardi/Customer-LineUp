@@ -1,0 +1,51 @@
+\subsection{Requirements}
+
+$G_1$ : Customers can line-up from their home to access the supermarket.
+\begin{itemize}
+	\item $R_1$ : The System retrieves the GPS position of the Customer.
+	\item $R_2$ : The System sends the QR code for the entrance.
+	\item $R_3$ : The Customer indicates with which mean of transport he intends to go to the supermarket.
+	\item $R_4$ : The Customer indicates the supermarket in which he wants to go.
+	\item $R_5$ : The System shows the Customer his Waiting Time.
+	\item $D_1$ : There is stable Internet connection. 
+	\item $D_2$ : The GPS provides the exact location with an error of 100 meters at most. 
+\end{itemize}
+$G_2$ : Customers can book in advance a visit to the supermarket.
+\begin{itemize}
+	\item $R_4$ : The Customer indicates the supermarket in which he wants to go.
+	\item $R_6$ : The Customer select date and time of his Booking.
+	\item $R_7$ : The Customer can input the expected duration of his visit.
+	\item $R_8$ : The System computes the Inferred Durations of the visits for Long-Term Customers who didn't input it.
+	\item $R_9$ : The Customer can input the exact list of items to buy or their categories. 
+	\item $D_1$ : There is stable Internet connection.
+\end{itemize}
+$G_3$ : Customers are notified when they have to go towards the store according the time they need to get to the supermarket.
+\begin{itemize}
+	\item $R_1$ : The System retrieves the GPS position of the Customer. 
+	\item $R_{10}$ : The System computes the time needed for the Customer to reach the supermarket based on his currently GPS position and on his mean of transport.
+	\item $R_{11}$ : The System notifies the Customer when he have to start.
+	\item $D_1$ : There is stable Internet connection.
+	\item $D_2$ : The GPS provides the exact location with an error of 100 meters at most. 
+\end{itemize}
+$G_4$ : Customers entrances are monitored and managed by the System.
+\begin{itemize}
+	\item $R_2$ : The System sends the QR code for the entrance.
+	\item $R_{12}$ : Customers scan their QR code when they both enter or exit from the supermarket.
+	\item $R_{13}$ : The System computes the Waiting Time considering the Real-Time Queue.
+	\item $R_{14}$ : The System increases entrances considering the affluence of the departments.
+	\item $D_1$ : There is stable Internet connection.
+	\item $D_3$ : All the Customers, both those who have booked or lined-up, arrive at the supermarket. 
+	\item $D_4$ : The Customers arrive at the supermarket on time with an error of 3 minutes at most.
+	\item $D_5$ : All the No-Tech Customers must obtain a ticket before entering.
+	\item $D_6$ : Customers who have booked stay in the supermarket for the time they have indicated with an error of 5 minutes.
+\end{itemize}
+$G_5$ : Store Managers can hand out tickets on the spot for Customers who do not have access to the required technology.
+\begin{itemize}
+	\item $R_{15}$ : Store Manager sends to the System an Ticket Request for No-Tech Customers.
+	\item $R_{16}$ : The System generates the Ticket and sends it to the Store Manager.
+	\item $R_{17}$ : The System updates the Real-Time Queue.
+	\item $D_1$ : There is stable Internet connection. 
+\end{itemize}
+
+ 
+ 

@@ -1,0 +1,34 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces High-Level View of the Application Architecture}}{8}{}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Class Diagram}}{10}{}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Component Diagram}}{12}{}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Deployment Diagram}}{15}{}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Customer Login Sequence Diagram}}{16}{}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Store Manager Registration Sequence Diagram}}{17}{}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Line-Up Sequence Diagram}}{18}{}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Booking Sequence Diagram}}{20}{}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Cancel Line-Up Sequence Diagram}}{21}{}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Cancel Booking Sequence Diagram}}{22}{}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Ticket Generation Sequence Diagram}}{23}{}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Send Notification Sequence Diagram}}{24}{}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Check Affluence Sequence Diagram}}{25}{}%
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Check Bookings Sequence Diagram}}{25}{}%
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Interface Diagram}}{27}{}%
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Model-View-Controller pattern}}{29}{}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Login}}{33}{}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Registration}}{33}{}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces New Line-Up}}{33}{}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Line-Up sent}}{34}{}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces New Booking}}{34}{}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Booking sent}}{34}{}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Scan QR Code}}{34}{}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Show Booking ID}}{34}{}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces WebApp Login}}{35}{}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces WebApp Registration}}{35}{}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces WebApp Homepage}}{36}{}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

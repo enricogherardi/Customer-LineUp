@@ -1,0 +1,113 @@
+# RighiGherardi
+
+Enrico Gherardi
+	-General Purpose (ok)
+	-Definitions (ok)
+	-Domain Assumptions (ok)
+	-State Diagrams 2.5 (ok)
+	-Product Functions (ok)
+	-Software Interface (ok)
+	-Software System Attributes (ok)
+	-SCENARIO:(ok)
+	
+Ludovico Righi
+	-Scope (ok -> da controllare: non ho fatto come nel RASD2 che ripetevano il General Purpose)
+	-Acronyms(ok) e Abbreviations (ok)
+	-Product Perspective (ok)
+	-User Characteristics (ok)
+	-Constraints (ok)
+	-Class Diagram 2.5 (ok)
+	-External Interface Requirements (ok) + Hardware Interface (ok)
+	-Performance Requirements (ok)
+	-Design Constraints (ok)
+	-Standard Compliance (ok)
+	-Hardware Limitations (ok)
+	-Any Other Constraint (ok)
+
+Skip
+	-User Inteface 3.1.1 (ok)
+
+Insieme
+	-Functional Requirements (ok)
+	
+
+
+USE CASE
+Use case Diagram G (ok)
+1)Customer:
+	-registrazione L (ok)
+	-login L (ok)
+	-line-up L (ok)
+	-cancel line-up L (ok)
+	-check waiting time L (ok)
+	-uses QRcode for entrance/exit G (ok)
+	-booking G (ok)
+	-cancel booking L (ok)
+
+2)Store Manager:
+	-registrazione L (ok)
+	-login L (ok)
+	-emissione ticket G (ok)
+	-check store affluence L (ok)
+
+
+SEQUENCE DIAGRAMS:
+	-registrazione L (ok) 
+	-login G (ok)
+	-line-up (ok)
+	-entrance of customer G 
+	-generation of the ticket L (ok)
+	-booking G (ok)
+	-cancel booking L (ok)
+
+
+
+
+APPUNTI COSE DA METTERE A POSTO:
+
+1)Proof Of Consistency 4.6)] -> inserire la foto giusta G
+
+2)[Capitolo 4] -> Diminuire la dimensione dello spazio perchè altrimenti alcune cose vanno a capo L
+
+3)[Alloy]-> Check generale G
+
+4)[Revision History (1.4)] -> Nella versione 2.0 indicare i cambiamenti fatti L & G
+
+5)[User Characteristics (2.3)] -> Dubbio: i customer without the required tech vanno messi? Dipende se consideriamo gli "actors" dell' "application" o del "system"
+
+6)[Use case diagram] -> Volendo possiamo inserire i vari tag <<initiate>>, <<partecipate>>
+
+7) Io scriverei esplicitamente che un Customer può fare solo 1 LineUp-Request alla volta e solo 1 Booking alla volta. Come motivazione possiamo dire: dato che l'applicazione deve essere usata da tutti, non vogliamo che qualcuno rimanga "escluso" e non abbia accesso ai supermercati per vari giorni. Volendo poi potremmo anche dire che ogni customer può fare al massimo X spese (con "spesa" intendo sia LineUp che Booking) al supermercato ogni Y giorni
+
+8) Controllare che l'inserimento degli item (o delle categorie di items) sia facoltativa.
+
+
+
+
+
+
+APPUNTI COSA CHE ABBIAMO GIA' DEFINITO:
+-[Definitions (1.3.1)] -> Inserire "Line-up Request", "Booking Request" e "Visit", "Ticket"
+
+-Dubbio generale: lo Store Manager ha accesso: solo con smartphone / solo con computer / entrambi?
+Invece il Customer ha accesso solo con lo smartphone giusto? --> RISPOSTA: SI'
+
+-[Entrance with Ticket (2.2.3)] -> Dubbio: facciamo segnalare allo Store Manager che il Customer senza tecnologia è uscito? --> RISPOSTA: SI'
+
+-Dubbio generale: se un Customer vuole fare una Line-Up Request ma {non ha il gps/ ha il gps spento } la richiesta viene rifiutata giusto? --> RISPOSTA: SI'
+
+-[Booking System (2.2.2)] -> potremmo anche mettere direttamente che il sistema mostra quali sono le disponibilità come giorni e orari, invece che farlo inserire al Customer e poi controllare se va bene. -->RISPOSTA: VA BENE LO STESSO TANTO NON DOBBIAMO IMPLEMENTARLO
+
+-Booking: supponiamo che tutti i Customer che hanno fatto Booking arrivino al supermarket e stiano dentro per il tempo selezionato o inferred.
+
+
+
+MODIFICHE POST CALL TUTOR:  [RICORDARSI di scriverle nella section Revision History]
+1)[Goals (1.1.2)] -> aggiunta introduzione.
+2)[Definitions (1.3.1)] -> modificata RealTimeQueue e riordinarli
+3)[Class diagram] -> modificato: introduzione di No-Tech Customer, Department, Category
+4)[Request State Diagram] -> piccola modifica 
+5)[Line-Up e Booking(2.2.1)] -> precisazione: 1 line-up alla volta e solo cancellazione (no modifica); QR Code scadono in 5 minuti; se è chiuso lo store la richiesta va al primo slot disponibile.
+6)[Use case: Entrance with QR Code] -> exceptions qr code scaduto
+7)[mockup]-> typo correction
+8)[text assumption]  "The responsibility for verifying if a Customer does not have the possibility to access the technology needed to use CLup falls on the Store Manager." -> VALUTAREEEEEE!!!!

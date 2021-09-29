@@ -1,0 +1,116 @@
+\chapter{Requirements Traceability}
+This chapter presents the mapping between the requirements, defined in the RASD document in order to achieve the prefixed goals, and the components introduced in the Component Diagram. This task is important because it permits to check whether all requirements have been considered and to control that every component is used at least one time. Moreover, in this way it is also possible to ensure that a proper modularity and separation of concerns of the components have been reached during the Design phase. 
+\begin{itemize}
+	\item $R_1$ : The System retrieves the GPS position of the Customer.
+	\begin{itemize}
+	\item MobileApp
+	\item GPSService
+	\item GoogleMapsService
+	\end{itemize}
+	\item $R_2$ : The System sends the QR code for the entrance.
+	\begin{itemize}
+	\item MobileApp 
+	\item CustomerService
+	\item LineUpService
+	\end{itemize}
+	\item $R_3$ : The Customer indicates with which mean of transport he intends to go to the supermarket.
+	\begin{itemize}
+	\item MobileApp
+	\item CustomerService
+	\item LineUpService
+	\end{itemize}
+	\item $R_4$ : The Customer indicates the supermarket in which he wants to go.
+	\begin{itemize}
+	\item MobileApp
+	\item CustomerService
+	\item LineUpService
+	\item BookingService
+	\end{itemize}
+	\item $R_5$ : The System shows the Customer his Waiting Time.
+	\begin{itemize}
+	\item MobileApp
+	\item CustomerService
+	\item LineUpService
+	\item RealTimeqQueueManager
+	\end{itemize}
+	\item $R_6$ : The Customer select date and time of his Booking.
+	\begin{itemize}
+	\item MobileApp
+	\item CustomerService
+	\item BookingService
+	\end{itemize}
+	\item $R_7$ : The Customer can input the expected duration of his visit.
+	\begin{itemize}
+	\item MobileApp
+	\item CustomerService
+	\item BookingService
+	\end{itemize}
+	\item $R_8$ : The System computes the Inferred Durations of the visits for Long-Term Customers who didn't input it.
+	\begin{itemize}  
+	\item CustomerService
+	\item BookingService
+	\item DatabaseAccess
+	\item Database
+	\end{itemize}
+	\item $R_9$ : The Customer can input the exact list of items to buy or their categories. 
+	 \begin{itemize}
+	\item MobileApp
+	\item CustomerService
+	\item BookingService
+	\end{itemize}
+	\item $R_{10}$ : The System computes the time needed for the Customer to reach the supermarket based on his currently GPS position and on his mean of transport.
+	\begin{itemize}
+	\item MobileApp
+	\item GPSService
+	\item GoogleMapsService
+	\end{itemize}
+	\item $R_{11}$ : The System notifies the Customer when he have to start.
+	\begin{itemize}
+	\item MobileApp
+	\end{itemize}
+	\item $R_{12}$ : Customers scan their QR code when they both enter or exit from the supermarket.
+	\begin{itemize}
+	\item MobileApp
+	\item CustomerService
+	\item LineUpService
+	\item RealTimeQueueManager
+	\end{itemize}
+	\item $R_{13}$ : The System computes the Waiting Time considering the Real-Time Queue.
+	\begin{itemize}  
+	\item CustomerService
+	\item LineUpService
+	\item RealTimeQueueManager
+	\item DatabaseAccess
+	\item Database
+	\end{itemize}
+	\item $R_{14}$ : The System increases entrances considering the affluence of the departments.
+	\begin{itemize}  
+	\item CustomerService
+	\item BookingService
+	\item DatabaseAccess
+	\item Database
+	\end{itemize}
+	\item $R_{15}$ : Store Manager sends to the System a Ticket Request for No-Tech Customers.
+	\begin{itemize}  
+	\item WebApplication
+	\item StoreManagerService
+	\item TicketService  
+	\end{itemize}
+	\item $R_{16}$ : The System generates the Ticket and sends it to the Store Manager.
+	\begin{itemize}  
+	\item WebApplication
+	\item StoreManagerService
+	\item TicketService
+	\item RealTimeQueueManager
+	\end{itemize}
+	\item $R_{17}$ : The System updates the Real-Time Queue.
+	\begin{itemize}   
+	\item StoreManagerService
+	\item TicketService
+	\item CustomerService
+	\item LineUpService
+	\item RealTimeQueueManager
+	\item DatabaseAccess
+	\item Database
+	\end{itemize}
+\end{itemize}

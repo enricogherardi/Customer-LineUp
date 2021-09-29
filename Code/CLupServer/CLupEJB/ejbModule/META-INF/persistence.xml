@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+	<persistence-unit name="CLupEJB"
+		transaction-type="JTA">
+		<jta-data-source>CLupDB</jta-data-source>
+		<class>it.clup.entities.Supermarket</class>
+		<class>it.clup.entities.Customer</class>
+		<class>it.clup.entities.StoreManager</class>
+		<class>it.clup.entities.LineUpRequest</class>
+		<properties>
+			<property name="eclipselink.logging.level" value="FINE" />
+		</properties>
+	</persistence-unit>
+</persistence>
+

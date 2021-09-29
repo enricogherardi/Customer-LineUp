@@ -1,0 +1,12 @@
+\section{Testing Plan}
+In this section it is briefly described the idea to follow to perform the Testing of the whole artifacts that have been produced during the entire software lifecycle. Of course, a more precise and deep analysis of this fundamental phase will be accurately described in the Implementation and Testing Document (ITD), in which test cases and their outcomes will be provided as well. In that document, in particular different kind of testing will be performed: \\
+\begin{itemize}
+	\item Unit Testing: every single component is tested before being integrated with the rest of the system.
+	\item Integration Testing: every module, composed by different components is tested.
+	\item System Testing: the whole system is tested as a "black-box" to check whether all the requirements are satisfied and so to complete the Verification process.
+	\item Performance Testing: the system is tested with the foreseen workload in order to identifies possible bottlenecks with respect to response time, utilization and thoughput.
+	\item Load Testing: the system is tested with the maximum load, which is reached incrementally by increasing it until a certain threshold. This testing exposes bugs such as memory leaks, mismanagement of memory, buffer overflows and identifies upper limits of components. \\
+\end{itemize}
+The general idea, as it has been already stated in this chapter, is to test the artifacts following a Bottom-Up approach, the same used also for the implementation and integration phases. The main advantage of this approach is that it is straightforward to be carried out, and typically for this reason it guarantees a satisfying result. In addition, this method is also very useful in order to optimize the task and parallelize the work between different teams. 
+Moreover, it is vital to test not only the software modules produced by programmers but also every other artifacts: for instance, every document, starting from the RASD untill the ITD, must be carefully revised and keep updated every time that a change is performed.
+

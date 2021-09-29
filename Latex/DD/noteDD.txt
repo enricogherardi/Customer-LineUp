@@ -1,0 +1,48 @@
+SHARED ARGOUMENTS: 
+	-Interface diagram (ok)
+	-capitolo 4 (ok)
+
+LUDOVICO RIGHI:
+	-capitolo 3 (ok)
+	-capitolo 5 (ok)
+	-deployment (ok)
+	-seq Booking (ok)
+	-seq TicketGeneration&Entrance (ok)
+	-2.6 + 2.7
+
+ENRICO GHERARDI:
+	-capitolo 1 (ok)
+	-overview (ok)	
+	-component diagram (ok)
+	-seq LineUp (ok)
+	-algoritmo (ok)
+
+
+COSE DA SISTEMARE:
+1) 
+2) aggiornare component; nota su Inferred Duration nel BookingService component
+3) MOCKUPS: rimuovere la schermata "Show Booking ID" per evitare problemi
+4)
+5) 
+6) aggiungere nell'interface: [[dropLineUpRequest(l: LineUpRequest) in RealTimeQueueManager]] - 
+7) mettere effort in fondo
+8) ricontrollare il Send Notification Seq. Diag.
+
+ 
+COSE SISTEMATE:
+-Mettere caption per ogni immagine (ok)
+-aggiungere GPSPosition in classDD (ok)
+-introdurre definizione di User (ovvero la generalizzazione di Customer e StoreManager)
+-Dubbio: nel Deployment va bene lasciare tutto generico oppure dobbiamo "battezzare" le cose usate? (Es: Apache, Tomcat,DMBS,..) anche perché ho visto che nell'Overview (2.1) hai già fatto una descrione generale dei 3 layer 
+-Domanda: i server diciamo che sono replicati? (si, se necessario) --> Replicazione solo Application Server (ok)
+-Aggiungere introduzione capitolo 4!!!! (ok)
+-Descrivere interface (ghera) (ok)
+
+
+
+
+IDEE:
+-DataManager nel Component Diagram
+-Thin / Thick Client
+-Cluster (figura 7 DD_to_be_analysed)
+-MVC(Model-View-Controller)

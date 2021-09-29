@@ -1,0 +1,21 @@
+\section{Implementation Plan}
+The first thing to do is to decide the order in which component will be implemented: the approach that has been chosen for this task, and also for the Integration and Testing ones, is the Bottom-Up one. This is mainly for two reasons: firstly it is by far the simplest one with respect to other incremental approaches such as Top-Down or Thread-based. This is an important advantage because it permits to reduce the probability of errors and typically guarantees more efficient tracking in case of bugs. \\
+The second reason is that this approach permits to perform testing and integration in parallel with the implementation in a quite easy way: in fact, after having implemented a component, Unit testing is perfomed directly by programmers and as the system grows through the Integration testing it is checked that the different modules interacts correclty. At the end of this incremental process, once the whole system is complete, and accurate System testing will ensure that every requirement has been satisfied.  \\
+The only drawback of this approach is that it is not possibile to release an "early-version" of the product in order to receive feedbacks, for instance about the UI or the usability, directly from the actually users of the application. However, this issue is obviuosly compensated by a the higher execution speed that the Bottom-Up approach ensures. \\
+Moreover, it is important to keep in mind that, when possible, parallelizing the work is crucial in order to minimize the Time to Market of the product. For this reason, no other constraints than those strictly needed and determined by the software design should be introduced, so as not to slow down the implementation, integration and testing phases. \\  
+In the Bottom-Up approach, to establish the order in which the implementation must be carried out, the dependencies between components are exploited: if a component rely on another one, necessarily the latter must be integrated before the former. Therefore, it is evident that this method suggests to start with the components which are completely independent from the other ones, or that, as in this case, only rely on external components such as the Database and the GoogleMapsService.
+For this reason, the first two components to be implemented and tested are the \textbf{DatabaseAccess} and the \textbf{GPSService}. \\
+Then, the next component that should be implemented is the \textbf{RealTimeQueueManager}, because it only depends on the DatabaseAccess component.	\\
+In parallel with that, also the two components used for the login and registration purposes, namely the \textbf{AuthenticationService} and the \textbf{AccountManager}, could be implemented. In fact, as the RealTimeQueueManager, they only depends on the DatabaseAccess and so they pose no problems.	 \\
+Going on, programmers could continue with the two main components of the entire system: the \textbf{CustomerService} and the \textbf{StoreManagerService}. But before, since these two are macro-components, their still unimplemented sub-components must be done. In particular, the \textbf{LineUpService}, the \textbf{BookingService}, the \textbf{TicketService} and the \textbf{AffluenceService} have to be carried out. These components are almost independent one from another and they only rely on the already present DatabaseAccess and RealTimeQueueManager.
+Finally, once also the two macro-components have been fully integrated and tested, the \textbf{MobileApplication} and the \textbf{WebApplication} could be realized. So, as expected, these two component, that are used in the interaction with Customers and Store Managers respectively and that constitute the Presentation level of the system, are implemented only at the end because they heavily rely on all the other components.
+In conclusion, to recap, the components of the system will be implemented in the following order:
+\begin{enumerate}
+	\item DatabaseAccess and GPSService
+	\item RealTimeQueueManager, AuthenticationService and AccountManager
+	\item LineUpService, BookingService, TicketService and AffluenceService
+	\item CustomerService and StoreManagerService
+	\item WebApplication and MobileApplication
+\end{enumerate}
+
+

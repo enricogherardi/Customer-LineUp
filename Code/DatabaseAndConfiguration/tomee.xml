@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tomee>
+	<Resource id="CLupDB" type="DataSource">
+		JdbcDriver com.mysql.cj.jdbc.Driver
+		JdbcUrl jdbc:mysql://localhost:3306
+		UserName root
+		Password Databases2Pass
+	</Resource>
+</tomee>

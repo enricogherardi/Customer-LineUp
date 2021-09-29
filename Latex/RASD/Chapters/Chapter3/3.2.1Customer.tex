@@ -1,0 +1,172 @@
+\subsection{Customer}
+
+\textbf{Scenario 1: Line-Up}\\
+Francesco is a young man who wants to take care of his grandparents during this lockdown period. He decides to grocery shop for them, but since he will have to be in contact with them he wants to minimize the risks of contagion. Luckily, he remembers that a friend told him of Customer Line-up and suddenly downloads it to line-up in the his grandparent’s favorite grocery shop.\\
+\textbf{Scenario 2: Booking}\\
+Alessandra is the mother of two children, Luca and Paolo, and she is also a busy Product Manager. Her presence is fundamental for her company and she also wants to protect her family so Customer Line-Up is her favorite application to grocery shop in Milan. However, she has very few slots of time where she can grocery shop, so she finds the booking functionality of CL-Up very helpful.\\
+\textbf{Scenario 3: Entrance with ticket}\\
+Valentino is a 80 years-old man who is completely capable of taking care of himself. For him, it is very necessary to grocery shopping completely safe, but he has not the required technological skills to use a smartphone and to download Customer Line-Up. Therefore, every time that Valentino goes to his favorite supermarket the store manager give him a physical ticket to enter in total security. The store manager report Valentino to the system to update the real time queue and the waiting time of all his customer.\\
+\textbf{Scenario 4: Unexpected Event after a Line-Up request}\\
+Beatrice is a young woman that uses regularly Customer Line-Up to grocery shopping. She is a veterinarian and she must always be ready for emergency calls. One day, while she was going to her favorite shop, she received a call from an old client of hers saying that his dog has eaten some chocolate. Although she had a waiting time for the supermarket’s entrance of only 10 minutes, she opened CLU and deleted her Line-Up request to permit to the system to update the real-time queue and to offer a more precise service to its customers. 
+
+
+\begin{center}
+    \begin{tabular}{ | l | p{11cm} |}
+    \hline
+    \textbf{Name} & Customer Registration \\ \hline
+    \textbf{Actor} & Customer \\ \hline
+    \textbf{Entry Condition} & Customer enters the Login page.  \\ \hline
+    \textbf{Event Flow} & \begin{enumerate}
+					\item The Customer clicks on the “Sign In” button in the Login page to start the Registration process.
+					\item The Customer fills in all the mandatory fields.
+					\item The Customer clicks on the “Register” button.
+					\item The System saves the data.
+					\item The System sends and email to the new Customer with the confirmation.
+		            \end{enumerate}\\  \hline
+    \textbf{Exit Condition} & The Customer successfully ends the registration process and become a new User. From now on he/she can log in to the application providing his/her credentials and start using CLup. \\ \hline
+    \textbf{Exceptions} & \begin{enumerate}
+					\item The Customer is already registered.
+					\item The Customer inserts not valid informations in one or more mandatory fields.
+					\item The Customer chooses an username that has already been taken by another user. 
+					\item The Customer chooses an email that has been associated with another user.
+					\item The Customer has not filled in one or more mandatory field.
+		            \end{enumerate} All exceptions are handled notifying the issue to the Customer and taking back the Event Flow to the point number 2.\\  \hline
+    \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{ | l | p{11cm} |}
+    \hline
+    \textbf{Name} & Customer Login \\ \hline
+    \textbf{Actor} & Customer \\ \hline
+    \textbf{Entry Condition} & The Customer has already registered. \\ \hline
+    \textbf{Event Flow} & \begin{enumerate}
+					\item The Customer inserts the username.
+					\item The Customer inserts the password.
+					\item The Customer clicks on the "Login" button.
+		            \end{enumerate}\\  \hline
+    \textbf{Exit Condition} & The Customer successfully logs in and have access to the CLup services.  \\ \hline
+    \textbf{Exceptions} & \begin{enumerate}
+					\item The Custom has not filled in both the username and the password.
+					\item The Customer inserts an email which is not saved in the database.
+					\item The Custom inserts a wrong password.
+		            \end{enumerate} All exceptions are handled notifying the issue to the Customer through a warning message.\\  \hline
+				
+    \end{tabular}
+\end{center} 
+
+\begin{center}
+    \begin{tabular}{ | l | p{11cm} |}
+    \hline
+    \textbf{Name} & Line-up \\ \hline
+    \textbf{Actor} & Customer \\ \hline
+    \textbf{Entry Condition} & Customer has already logged in.  \\ \hline
+    \textbf{Event Flow} & \begin{enumerate}
+					\item The Customer chooses the supermarket in which he wants to go.
+					\item The Customer indicates with which mean of transport he intends to go to the supermarket.
+					\item The Customer clicks on the "Line-up" button.
+					\item The System inserts the request in the queue.
+					\item The System shows the Customer his Waiting Time.
+		            \end{enumerate}\\  \hline
+    \textbf{Exit Condition} & The Custom has successfully sent his line-up request. \\ \hline
+    \textbf{Exceptions} & \begin{enumerate}
+					\item The Customer has not chosen the supermarket.
+					\item The Customer has not indicated his mean of transport. 
+					\item The Customer device is not provided with a GPS or the Customer has not  given to CLup the permission to ulitize it.
+		            \end{enumerate} All exceptions are handled notifying the issue to the Customer through a warning message.\\  \hline
+				
+    \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{ | l | p{11cm} |}
+    \hline
+    \textbf{Name} & Cancel Line-up \\ \hline
+    \textbf{Actor} & Customer \\ \hline
+    \textbf{Entry Condition} & Customer has already logged in and lined-up.  \\ \hline
+    \textbf{Event Flow} & \begin{enumerate}
+					\item The Customer clicks on the "Cancel Line-up" button.
+					\item The System removes the request from the queue.
+		            \end{enumerate}\\  \hline
+    \textbf{Exit Condition} & The Customer has successfully canceled his line-up request. \\ \hline
+    \textbf{Exceptions} & There are no possible exceptions, since the "Cancel Line-up" button is shown only if there is actually a Line-up request in the System queue.\\  \hline		
+    \end{tabular}
+\end{center}
+
+
+\begin{center}
+    \begin{tabular}{ | l | p{11cm} |}
+    \hline
+    \textbf{Name} & Check Waiting Time \\ \hline
+    \textbf{Actor} & Customer \\ \hline
+    \textbf{Entry Condition} & Customer has already logged in and lined-up.  \\ \hline
+    \textbf{Event Flow} & \begin{enumerate}
+					\item The Customer enters in the LineUp section.
+					\item The System updates the Waiting Time based on the Real-Time Queue.
+					\item The System shows the Waiting Time to the Customer.
+		            \end{enumerate}\\  \hline
+    \textbf{Exit Condition} & The Customer is showned his Waiting Time.\\ \hline
+    \textbf{Exceptions} & There are no possible exceptions, since the Waiting Time is shown only if there is actually a Line-up Request in the system queue.\\  \hline	
+    \end{tabular}
+\end{center}
+
+
+\begin{center}
+    \begin{tabular}{ | l | p{11cm} |}
+    \hline
+    \textbf{Name} & Entrance with QR Code \\ \hline
+    \textbf{Actor} & Customer \\ \hline
+    \textbf{Entry Condition} & Customer has already done a line-up request and is arrived at the supermarket.\\ \hline
+    \textbf{Event Flow} & \begin{enumerate}
+					\item The Customer opens the application.
+					\item The Customer clicks the button "Show QR Code".
+					\item The Customer scans the QR code at the entrance.
+		            \end{enumerate}\\  \hline
+    \textbf{Exit Condition} & The Custom enters succesfully the store and the real-time queue is updated.  \\ \hline
+    \textbf{Exceptions} & \begin{enumerate}
+					\item The scanned QR Code invalid or expired.
+		            \end{enumerate} 
+		            The customer is invited to use CL-Up and to leave the store in order to avoid gatherings.\\  \hline
+				
+    \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{ | l | p{11cm} |}
+    \hline
+    \textbf{Name} & Booking \\ \hline
+    \textbf{Actor} & Customer \\ \hline
+    \textbf{Entry Condition} & Customer has already logged in.\\ \hline
+    \textbf{Event Flow} & \begin{enumerate}
+					\item The Customer chooses the supermarket in which he wants to go.
+					\item The Customer indicates the date and time of his visit.
+					\item The Customer inputs the expected time of the visit.
+					\item The customer indicates the list of items, or their categories, he intends to buy.
+					\item The Customer clicks on the "Book" button.
+					\item The System inserts the visit into the booking plan of the indicated supermarket.
+					\item The System shows the customer his booked visits.
+		            \end{enumerate}\\  \hline
+    \textbf{Exit Condition} & The Custom has successfully booked his visit. \\ \hline
+    \textbf{Exceptions} & \begin{enumerate}
+					\item The Customer has not chosen the supermarket.
+					\item The Customer has not indicated the date and time of the visit.
+					\item The short-term Customer has not indicated expected duration of the visit.
+		            \end{enumerate} All exceptions are handled notifying the issue to the Customer through a warning message.\\  \hline
+				
+    \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{ | l | p{11cm} |}
+    \hline
+    \textbf{Name} & Cancel Booking \\ \hline
+    \textbf{Actor} & Customer \\ \hline
+    \textbf{Entry Condition} & Customer has already logged in and made a booking.  \\ \hline
+    \textbf{Event Flow} & \begin{enumerate}
+					\item The Customer clicks on the "Cancel Booking" button.
+					\item The System removes the booking.
+		            \end{enumerate}\\  \hline
+    \textbf{Exit Condition} & The Customer has successfully canceled his booking request. \\ \hline
+    \textbf{Exceptions} & There are no possible exceptions, since the "Cancel Boooking" button is shown only if there is actually a Booking request in the System database.\\  \hline		
+    \end{tabular}
+\end{center}

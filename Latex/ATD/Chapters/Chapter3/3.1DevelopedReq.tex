@@ -1,0 +1,137 @@
+\section{Developed Requirements Checking}
+
+
+
+\begin{itemize}
+	\item \textbf{R1}: The system shall allow store managers to identify themselves (login as Manager). \\ \\ \textbf{Test Case}: login with valid store manager credentials.  \\  \textbf{Input}: username="manager1", password="password".\\ 		\textbf{Output}: Successful login. \\
+\\ \textbf{Test Case}: login with valid store manager username and wrong password.  \\  \textbf{Input}: username="manager1", password="wrong".\\ 		\textbf{Output}: Refused login. \\
+\\ \textbf{Test Case}: login with invalid store manager credentials.  \\  \textbf{Input}: username="manag", password="wrong".\\ 		\textbf{Output}: Refused login.
+
+
+
+	\item \textbf{R2}: The system shall allow the store manager to register stores to the CLup administration  \\ \\ \textbf{Test Case}: register store with all valid fields.  \\  \textbf{Input}:chain="ExampleStore", name="ExampleStore market", address="via Mons. G. Cavazzuti 24", openingTime="08:30", closingTime="18:45", capacity="100", reservationLimit="20", waitMultiplier="5".\\ 		\textbf{Output}: Successful store registration. \\
+\\ \textbf{Test Case}: register store with a missing field (the same test case is valid for any missing field).  \\  \textbf{Input}:chain=(null), name="ExampleStore market", address="via Mons. G. Cavazzuti 24", openingTime="08:30", closingTime="18:45", capacity="100", reservationLimit="20", waitMultiplier="5".\\ 		\textbf{Output}: Missing field error; store not registered. \\
+\\ \textbf{Test Case}: register store with reservation limit greater than maximum capacity.  \\  \textbf{Input}:chain="ExampleStore", name="ExampleStore market", address="via Mons. G. Cavazzuti 24", openingTime="08:30", closingTime="18:45", capacity="100", reservationLimit="200", waitMultiplier="5".\\ 		\textbf{Output}: Reservation limit error; store not registered.
+
+
+
+	\item \textbf{R3}: The system shall allow the store manager to insert parameters for his stores \\ \\ \textbf{Test Case}: implicitely tested through the previous test case.	
+
+
+
+
+
+
+	\item \textbf{R5}: The system shall allow the store manager to register operators for ticket evaluation. \\ \\ \textbf{Test Case}: register operator with all valid fields.  \\  \textbf{Input}: username="op3car", password="password", repeatPassword="password", store="ExampleStore market".\\ 		\textbf{Output}: Successful operator registration. \\
+\\ \textbf{Test Case}: register operator with a missing field \\  \textbf{Input}: username=(null), password="password", repeatPassword="password", store="ExampleStore market".\\ 		\textbf{Output}: Refused operator registration. \\
+\\ \textbf{Test Case}: register operator with code lenght different from 6.  \\  \textbf{Input}: username=operato16, password="password", repeatPassword="password", store="ExampleStore market"..\\ 		\textbf{Output}: Refused operator registration.
+\\ \\ \textbf{Test Case}: register operator wrong password confirmation.  \\  \textbf{Input}: username="op3car", password="password", repeatPassword="passwordWrong", store="ExampleStore market".\\ 		\textbf{Output}: Refused operator registration. \\
+
+
+
+
+	\item \textbf{R6}: The system shall let in the store only customers with a valid ticket. \\ \\ \textbf{Test Case}: insert valid QR Code.  \\ 
+ \textbf{Input}: QR Code="Ba697f6be-14fb-4378-bd9d-08a56de06895" .\\ 		\textbf{Output}: Successfull entrance. \\ \\ \textbf{Test Case}: scan invalid QR Code.\\ 
+ \textbf{Input}: QR Code="Ba697f6be-14fb-4378-bd9d-08a56de54268" .\\ 		\textbf{Output}: Refused entrance. \\
+
+
+	\item \textbf{R7}: The system must invalidate a ticket after 180 minutes since the entrance evaluation.  
+ \\ \\ \textbf{Test Case}: check ticket status after 180 minutes or more.\\ 
+ \textbf{Input}: /.\\ 		\textbf{Output}: Invalidated ticket. \\
+
+
+
+	\item \textbf{R8}: The system must reset the number of people in the queue every time it closes. 
+ \\ \\ \textbf{Test Case}: check queue status after closing time.\\ 
+ \textbf{Input}: /.\\ 		\textbf{Output}: Number of people in the queue resetted. \\
+
+
+	\item \textbf{R9}: The system must show the number of people inside the store to operators. \\ \\ \textbf{Test Case}: click on "Current Information" on operator menu  \\  \textbf{Input}: /.\\ 		\textbf{Output}: People inside and maximum capacity are shown. \\
+
+
+
+
+	\item \textbf{R10}: The system shall allow operators to scan tickets when a customer enters the store.\\ \\ \textbf{Test Case}: insert valid QR Code.  \\ 
+ \textbf{Input}: QR Code="Ba697f6be-14fb-4378-bd9d-08a56de06895" .\\ 		\textbf{Output}: Successfull entrance. \\ \\ \textbf{Test Case}: insert invalid QR Code.\\ 
+ \textbf{Input}: QR Code="Ba697f6be-14fb-4378-bd9d-08a56de54268" .\\ 		\textbf{Output}: Refused entrance. \\
+
+
+
+
+
+	\item \textbf{R11}: The system shall allow operators to scan tickets when a customer exits the store. \\ \\ \textbf{Test Case}: insert valid QR Code.  \\ 
+ \textbf{Input}: QR Code="Ba697f6be-14fb-4378-bd9d-08a56de06895" .\\ 		\textbf{Output}: Successfull exit. \\ \\ \textbf{Test Case}: scan invalid QR Code.\\ 
+ \textbf{Input}: QR Code="Ba697f6be-14fb-4378-bd9d-08a56de54268" .\\ 		\textbf{Output}: Refused exit. \\
+
+
+	\item \textbf{R12}: The system shall allow lined-up customers to withdraw their ticket. \\ \\ \textbf{Test Case}: click on withdraw button.  \\ 
+ \textbf{Input}:/.\\ 		\textbf{Output}: Successfull ticket withdraw. \\ \\
+
+
+	\item \textbf{R16}: The system shall provide to lined-up customers their real time approximate waiting time. \\ \\ \textbf{Test Case}: check an active lined-up ticket.  \\ 
+ \textbf{Input}:/.\\ 		\textbf{Output}: Waiting time shown. \\ \\
+
+
+	\item \textbf{R17}: The system shall provide to lined-up customers their real time position in the queue. \\ \\ \textbf{Test Case}: check an active lined-up ticket.  \\ 
+ \textbf{Input}:/.\\ 		\textbf{Output}: Position shown. \\ \\
+
+
+	\item \textbf{R18}: The system shall show a real-time queue status to customers who wants to line-up. \\ \\ \textbf{Test Case}: check an active lined-up ticket.  \\ 
+ \textbf{Input}:/.\\ 		\textbf{Output}: Status shown. \\ \\
+
+
+	\item \textbf{R19}: The system must invalidate a booked ticket after 15 min if a customer does not show up. \\ \\ \textbf{Test Case}: check booked ticket 15 minutes after the selected time.   \\ 
+ \textbf{Input}:/.\\ 		\textbf{Output}: Booked ticket deleted. \\ \\
+
+
+	\item \textbf{R20}: The system shall allow operators to call the next one in the queue if the called customer does not show up. \\ \\ \textbf{Test Case}: click on "Call next" on the operator interface.  \\ 
+ \textbf{Input}:/.\\ 		\textbf{Output}: Next customer is called. \\ \\
+
+
+	\item \textbf{R23}: The system shall allow people to line-up in a virtual queue (no more than once at the same time). \\ \\ \textbf{Test Case}: create a new line-up for a customer that has not another active one.  \\ 
+ \textbf{Input}: store="ExampleStore market".\\ 		\textbf{Output}: Line-up successfully sent. 
+ \\ \\ \textbf{Test Case}: create a new line-up for a customer that has already another active one.  \\ 
+ \textbf{Input}: store="ExampleStore market".\\ 		\textbf{Output}: Impossible to send the line-up. \\ \\
+
+
+
+	\item \textbf{R24}: The system shall provide a queue ticket to customers who line-up. \\ \\ \textbf{Test Case}: check customer interface.  \\ 
+ \textbf{Input}:/.\\ 		\textbf{Output}: Line-up information are shown. \\ \\
+
+
+
+	\item \textbf{R27}:The system shall allow the customer to identify himself (login/sign-in). \\ \\ \textbf{Test Case}: login with valid customer credentials.  \\  \textbf{Input}: username="teobia98", password="password".\\ 		\textbf{Output}: Successful login. \\
+\\ \textbf{Test Case}: login with valid customer username and wrong password.  \\  \textbf{Input}: username="teobia98", password="wrong".\\ 		\textbf{Output}: Refused login. \\
+\\ \textbf{Test Case}: login with invalid customer credentials.  \\  \textbf{Input}: username="teob", password="wrong".\\ 		\textbf{Output}: Refused login.
+\\ \\ \textbf{Test Case}: register customer with all valid fields. \\ \textbf{Input}: username=ludorighi, email="example@gmail.com", name="Ludovico", lastName="Righi", password="password", repeatPassword="password".\\ 		\textbf{Output}: Successful customer registration. \\
+\\ \textbf{Test Case}: register customer with a missing field (the same test case is valid for any missing field).  \\  \textbf{Input}: username=(null), email="example@gmail.com", name="Ludovico", lastName="Righi", password="password", repeatPassword="password".\\ 		\textbf{Output}: Missing field error; customer not registered. \\
+\\ \textbf{Test Case}: register customer with wrong password repetition.  \\  \textbf{Input}: username=ludorighi, email="example@gmail.com", name="Ludovico", lastName="Righi", password="password", repeatPassword="passw".\\ 		\textbf{Output}: Passwords not matching error; customer not registered. \\	
+
+
+	\item \textbf{R28}: The system shall allow customers to book a visit for a specific date/time and duration (once per day and not for the current day). \\ \\ \textbf{Test Case}: send new booking for the current day.  \\ 
+ \textbf{Input}: store="ExampleStore market" , date=(today), time="08:00", duration="30 minutes".\\ 		\textbf{Output}: Impossible to select current day; booking not sent. 
+\\ \\ \textbf{Test Case}: send new booking for the same date of another booking.  \\ 
+ \textbf{Input}: store="ExampleStore market" , date=(repeatedDate), time="08:00", duration="30 minutes".\\ 		\textbf{Output}: Booking successfully sent (requirement violated). \\ \\ \textbf{Test Case}: send new booking with all valid fields.  \\ 
+ \textbf{Input}: store="ExampleStore market" , date="03/03/2021", time="08:00", duration="30 minutes".\\ 		\textbf{Output}:  Booking successfully sent. \\ \\
+
+
+	\item \textbf{R30}: The system shall provide a booked ticket to customers who reserve a visit.  \\ \\ \textbf{Test Case}: check customer interface.  \\ 
+ \textbf{Input}:/.\\ 		\textbf{Output}: Booked ticket information are shown. \\ \\
+
+
+	\item \textbf{R31}: The system shall allow customers who booked a visit to withdraw their tickets. \\ \\ \textbf{Test Case}: click on withdraw button.  \\ 
+ \textbf{Input}:/.\\ 		\textbf{Output}: Successfull booked ticket withdraw. \\ \\
+
+
+	\item \textbf{R32}: The system shall provide real-time free time slots for customers who wants to book a visit. \\ \\ \textbf{Test Case}: check free time slots when sending a booked ticket.  \\ 
+ \textbf{Input}:/.\\ 		\textbf{Output}: Free time slots provided. \\ \\	
+
+
+\end{itemize}
+
+
+
+
+
+
+
