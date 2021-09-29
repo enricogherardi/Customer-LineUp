@@ -40,5 +40,5 @@ The Mobile Application uses the Google Map's APIs, in particular:
   - GOOGLE MAPS DISTANCE MATRIX API: to get informations about the recommended route and the duration of the trip (driving, public transportation, walking or cycling) while considering the current traffic situation.
 
 # Group Members
-This project was developed for the "Software Engineering II" course at Politecnico di Milano by me (Ludovico Righi) and my colleague Enrico Gherardi.
+This project was developed for the "Software Engineering II" course at Politecnico di Milano by me (Enrico Gherardi) and my colleague Ludovico Righi.
 The final evaluation by our professor was 30/30.
